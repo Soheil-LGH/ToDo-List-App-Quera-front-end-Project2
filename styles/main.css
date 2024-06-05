@@ -1,0 +1,217 @@
+@font-face {
+  font-family: B_yekan;
+  src: url(./BYekan+.ttf);
+}
+body {
+  direction: rtl;
+  overflow-x: hidden;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "B_yekan", Segoe UI, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.container aside {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: 92vh;
+  padding: 1.5rem;
+  margin: 1.5rem 1.5rem 1.5rem 0rem;
+  border-radius: 16px;
+  position: relative;
+  box-shadow: 0px 4px 58.5px 0px rgba(0, 0, 0, 0.0588235294);
+}
+.container aside .user {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.container aside .user .userPic {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container aside .user .text {
+  display: flex;
+  flex-direction: column;
+}
+.container aside .user .text .hiUser {
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: #242424;
+}
+.container aside .user .text .date {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #7d7d7f;
+}
+.container aside .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 3rem;
+}
+.container aside .menu > a {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  border-radius: 8px;
+  padding: 0rem 12px;
+  align-items: center;
+  text-align: center;
+  height: 38px;
+}
+.container aside .menu > a > p {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #525252;
+}
+.container aside .menu > a > img {
+  -o-object-fit: none;
+     object-fit: none;
+}
+.container aside .menu .home {
+  background-color: #f5faff;
+}
+.container aside .menu .home .homeTxt {
+  color: #007bff;
+}
+.container aside .lightLineLogout {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 2rem;
+  justify-content: space-between;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 80%;
+  gap: 1.2rem;
+}
+.container aside .lightLineLogout .LightMode {
+  display: flex;
+  flex-direction: row;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.container aside .lightLineLogout .LightMode .mode {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  text-align: center;
+  width: 47%;
+  justify-content: center;
+}
+.container aside .lightLineLogout .LightMode .mode > p {
+  font-size: 0.875rem;
+  color: #525252;
+  font-weight: 600;
+}
+.container aside .lightLineLogout .LightMode .mode .darkTxt {
+  color: #808080;
+}
+.container aside .lightLineLogout .LightMode .light {
+  height: 80%;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+.container aside .lightLineLogout .line {
+  width: 100%;
+  height: 1px;
+  background-color: #e9e9e9;
+}
+.container aside .lightLineLogout .logout {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.container aside .lightLineLogout .logout > p {
+  color: #525252;
+}
+.container main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container main .content {
+  width: 70%;
+  padding: 4rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.container main .content .todayTasks .title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #242424;
+}
+.container main .content .todayTasks .subtitle {
+  font-size: 0.875rem;
+  font-weight: 800;
+  color: #696969;
+  margin: 0.5rem 0 1.5rem 0;
+}
+.container main .content .addTask {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 1px dashed #cccccc;
+  border-radius: 10px;
+  padding: 16px 16px 16px;
+  gap: 16px;
+}
+.container main .content .addTask p {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #007bff;
+}
+.container main .content .imgAndText {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
+.container main .content .imgAndText .line1 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #7d7d7f;
+}
+.container main .content .imgAndText .line2 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #afaeb2;
+}
+.container main .content .doneTasks {
+  display: flex;
+  flex-direction: column;
+}
+.container main .content .doneTasks .title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #242424;
+}
+.container main .content .doneTasks .subtitle {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #696969;
+  margin: 0.5rem 0 0.8rem 0;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,234 @@
+@font-face {
+  font-family: B_yekan;
+  src: url(./BYekan+.ttf);
+}
+body {
+  direction: rtl;
+  overflow-x: hidden;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "B_yekan", Segoe UI, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  aside {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 92vh;
+    padding: 1.5rem;
+    margin: 1.5rem 1.5rem 1.5rem 0rem;
+    border-radius: 16px;
+    position: relative;
+    box-shadow: 0px 4px 58.5px 0px #0000000f;
+
+    .user {
+      display: flex;
+      flex-direction: row;
+      margin-top: 1rem;
+      gap: 1rem;
+      .userPic {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .text {
+        display: flex;
+        flex-direction: column;
+        .hiUser {
+          font-size: 1.125rem;
+          font-weight: 800;
+          color: #242424;
+        }
+        .date {
+          font-size: 0.875rem;
+          font-weight: 600;
+          color: #7d7d7f;
+        }
+      }
+    }
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      margin-top: 3rem;
+      & > a {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        border-radius: 8px;
+        padding: 0rem 12px;
+        align-items: center;
+        // justify-content: center;
+        text-align: center;
+        height: 38px;
+        & > p {
+          font-size: 0.875rem;
+          font-weight: 600;
+          color: #525252;
+        }
+        & > img {
+          object-fit: none;
+        }
+      }
+      .home {
+        background-color: #f5faff;
+        .homeTxt {
+          color: #007bff;
+        }
+      }
+    }
+    .lightLineLogout {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      bottom: 2rem;
+      // margin-top: 3rem;
+      justify-content: space-between;
+      height: fit-content;
+      width: 80%;
+      gap: 1.2rem;
+      .LightMode {
+        display: flex;
+        flex-direction: row;
+        border-radius: 8px;
+        background-color: #f7f7f7;
+        width: 100%;
+        height: 2.5rem;
+        align-items: center;
+        justify-content: center;
+        // gap: 1rem;
+        // padding: 1rem 3.5rem;
+        justify-content: space-evenly;
+
+        .mode {
+          display: flex;
+          flex-direction: row;
+          gap: 0.5rem;
+          align-items: center;
+          text-align: center;
+          width: 47%;
+          justify-content: center;
+          & > p {
+            font-size: 0.875rem;
+            color: #525252;
+            font-weight: 600;
+          }
+          .darkTxt {
+            color: #808080;
+          }
+          // justify-content: space-between;
+          // width: 100%;
+        }
+        .light {
+          // padding: 6px, 16px, 6px, 20px;
+          // padding: 0.5rem 1rem;
+          // width: 50%;
+          height: 80%;
+          background-color: #ffffff;
+          border-radius: 8px;
+        }
+      }
+      .line {
+        width: 100%;
+        height: 1px;
+        background-color: #e9e9e9;
+      }
+      .logout {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        & > p {
+          color: #525252;
+        }
+      }
+    }
+  }
+
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .content {
+      width: 70%;
+      padding: 4rem 0 0 0;
+      display: flex;
+      flex-direction: column;
+      .todayTasks {
+        .title {
+          font-size: 1.25rem;
+          font-weight: 800;
+          color: #242424;
+        }
+        .subtitle {
+          font-size: 0.875rem;
+          font-weight: 800;
+          color: #696969;
+          margin: 0.5rem 0 1.5rem 0;
+        }
+      }
+      .addTask {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        border: 1px dashed #cccccc;
+        border-radius: 10px;
+        padding: 16px 16px 16px;
+        gap: 16px;
+        p {
+          font-size: 1rem;
+          font-weight: 700;
+          color: #007bff;
+        }
+      }
+      .imgAndText {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin: 2rem 0;
+        img {
+          // object-fit: none;
+          // opacity: 50%;
+        }
+        .line1 {
+          font-size: 1rem;
+          font-weight: 800;
+          color: #7d7d7f;
+        }
+        .line2 {
+          font-size: 0.875rem;
+          font-weight: 600;
+          color: #afaeb2;
+        }
+      }
+      .doneTasks {
+        display: flex;
+        flex-direction: column;
+        .title {
+          font-size: 1.25rem;
+          font-weight: 800;
+          color: #242424;
+        }
+        .subtitle {
+          font-size: 0.875rem;
+          font-weight: 400;
+          color: #696969;
+          margin: 0.5rem 0 0.8rem 0;
+        }
+        .list-of-done-tasks {
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fa-ir">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List App</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="icon" type="image/x-icon" href="./src/tick-square.svg" />
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <div class="user">
+          <img class="userPic" src="./src/userImg.png" alt="user picture" />
+          <div class="text">
+            <p class="hiUser">سلام،</p>
+            <p class="date">تاریخ</p>
+          </div>
+        </div>
+        <div class="menu">
+          <a class="home" href="">
+            <img class="img" src="./src/home-2.svg" alt="" />
+            <p class="homeTxt txt">خانه</p>
+          </a>
+          <a class="tasks" href="">
+            <img class="img" src="./src/task-square.svg" alt="" />
+            <p class="tasksTxt txt">تسک‌ها</p>
+          </a>
+          <a class="calendar" href="">
+            <img class="img" src="./src/calendar.svg" alt="" />
+            <p class="calendarTxt txt">تقویم</p>
+          </a>
+          <a class="reports" href="">
+            <img class="img" src="./src/arrange-square-2.svg" alt="" />
+            <p class="reportsTxt txt">گزارشات</p>
+          </a>
+          <a class="settings" href="">
+            <img class="img" src="./src/setting.svg" alt="" />
+            <p class="settingsTxt txt">تنظیمات</p>
+          </a>
+          <a class="support" href="">
+            <img class="img" src="./src/24-support.svg" alt="" />
+            <p class="supportTxt txt">پشتیبانی</p>
+          </a>
+          <a class="profile" href="">
+            <img class="img" src="./src/profile.svg" alt="" />
+            <p class="profileTxt txt">پروفایل</p>
+          </a>
+        </div>
+        <div class="lightLineLogout">
+          <div class="LightMode">
+            <div class="light mode">
+              <img src="./src/sun.svg" alt="" />
+              <p class="lightTxt">روشن</p>
+            </div>
+            <div class="dark mode">
+              <img src="./src/moon.svg" alt="" />
+              <p class="darkTxt">تاریک</p>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="logout">
+            <img src="./src/logout.svg" alt="" />
+            <p class="logoutTxt">خروج</p>
+          </div>
+        </div>
+      </aside>
+      <main>
+        <div class="content">
+          <div class="todayTasks">
+            <p class="title">تسک‌های امروز</p>
+            <p class="subtitle">...تسک را باید انجام دهید</p>
+          </div>
+          <div class="addTask">
+            <img src="./src/add.svg" alt="" />
+            <p>افزودن وظیفه جدید</p>
+          </div>
+          <div class="imgAndText">
+            <img class="img" src="./src/2143202_Artboard 1.svg" alt="" />
+            <p class="line1">چه کارهایی امروز برای انجام داری؟</p>
+            <p class="line2">
+              میتونی الان تسک‌هاتو بنویسی و برنامه‌ریزی رو شروع کنی!
+            </p>
+          </div>
+          <div class="doneTasks">
+            <p class="title">تسک‌های انجام شده</p>
+            <p class="subtitle">...تسک انجام شده است.</p>
+            <div class="list-of-done-tasks"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
