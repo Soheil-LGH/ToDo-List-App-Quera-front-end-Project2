@@ -90,23 +90,30 @@
               id="todo-input"
               placeholder="توضیحات"
             />
-            <input
+            <!-- <input
               type="button"
               class="tag-list-button"
               id="tag-list"
               name="tag-list"
             />
-            <label for="tag-list" id="tag-list-label">تگ‌ها</label>
+            <label for="tag-list" id="tag-list-label">تگ‌ها</label> -->
+            <div id="tag-list" class="tag-list">
+              <img src="./src/tag-right.svg" alt="" />
+              
+              <p>تگ‌ها</p>
+            </div>
 
-            <div class="tags">
+            <div class="todo-priority" id="todo-priority">
               <input type="radio" id="low-tag" name="tag" value="low" />
-              <label for="low">پایین</label>
+              <label for="low" id="low-tag-label">پایین</label>
+              <div class="line"></div>
 
               <input type="radio" id="medium-tag" name="tag" value="medium" />
-              <label for="medium">متوسط</label>
+              <label for="medium" id="medium-tag-label">متوسط</label>
+              <div class="line"></div>
 
               <input type="radio" id="high-tag" name="tag" value="high" />
-              <label for="high">بالا</label>
+              <label for="high" id="high-tag-label">بالا</label>
             </div>
 
             <div class="line"></div>
