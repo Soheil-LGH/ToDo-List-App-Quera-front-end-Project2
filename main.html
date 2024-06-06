@@ -6,6 +6,7 @@
     <title>ToDo List App</title>
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="icon" type="image/x-icon" href="./src/tick-square.svg" />
+    <script src="./scripts/main.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -71,11 +72,50 @@
             <p class="title">تسک‌های امروز</p>
             <p class="subtitle">...تسک را باید انجام دهید</p>
           </div>
-          <div class="addTask">
+          <div id="addTask" class="addTask">
             <img src="./src/add.svg" alt="" />
             <p>افزودن وظیفه جدید</p>
           </div>
-          <div class="imgAndText">
+
+          <form id="todo-form" action="">
+            <input
+              type="text"
+              name="todo-title"
+              id="todo-title"
+              placeholder="نام تسک"
+            />
+            <input
+              type="text"
+              name="todo-input"
+              id="todo-input"
+              placeholder="توضیحات"
+            />
+            <input
+              type="button"
+              class="tag-list-button"
+              id="tag-list"
+              name="tag-list"
+            />
+            <label for="tag-list" id="tag-list-label">تگ‌ها</label>
+
+            <div class="tags">
+              <input type="radio" id="low-tag" name="tag" value="low" />
+              <label for="low">پایین</label>
+
+              <input type="radio" id="medium-tag" name="tag" value="medium" />
+              <label for="medium">متوسط</label>
+
+              <input type="radio" id="high-tag" name="tag" value="high" />
+              <label for="high">بالا</label>
+            </div>
+
+            <div class="line"></div>
+
+            <button type="submit">اضافه کردن تسک</button>
+          </form>
+          <ul id="todo-list"></ul>
+
+          <div class="imgAndText" id="imageAndText">
             <img class="img" src="./src/2143202_Artboard 1.svg" alt="" />
             <p class="line1">چه کارهایی امروز برای انجام داری؟</p>
             <p class="line2">

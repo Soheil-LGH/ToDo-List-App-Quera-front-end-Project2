@@ -22,11 +22,11 @@ body {
     display: flex;
     flex-direction: column;
     width: 20rem;
-    height: 92vh;
+    // height: 40rem;
     padding: 1.5rem;
     margin: 1.5rem 1.5rem 1.5rem 0rem;
     border-radius: 16px;
-    position: relative;
+    // position: absolute;
     box-shadow: 0px 4px 58.5px 0px #0000000f;
 
     .user {
@@ -89,14 +89,16 @@ body {
     .lightLineLogout {
       display: flex;
       flex-direction: column;
-      position: absolute;
-      bottom: 2rem;
-      // margin-top: 3rem;
+      // position: absolute;
+      // bottom: 2rem;
+      padding: 5rem 0 0 0;
       justify-content: space-between;
       height: fit-content;
-      width: 80%;
+      width: 100%;
       gap: 1.2rem;
       .LightMode {
+        // margin-top: 15rem;
+
         display: flex;
         flex-direction: row;
         border-radius: 8px;
@@ -155,6 +157,7 @@ body {
 
   main {
     width: 100%;
+    // padding-right: 21.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -232,3 +235,73 @@ body {
     }
   }
 }
+
+
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+
+  #todo-title{}
+  #todo-input{}
+  #tag-list{}
+  #tag-list-label{}
+  .tags{
+    input[type="radio"]{}
+    label{}
+  }
+  .line{}
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px;
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  background: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li:nth-child(odd) {
+  background: #f1f1f1;
+}
+
+button.delete {
+  background: #dc3545;
+}
+
+button.delete:hover {
+  background: #c82333;
+}
+
+// .no-bg{
+//   background-image: none;
+//   display: none;
+//   visibility: hidden;
+// }
